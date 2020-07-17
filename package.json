@@ -1,22 +1,21 @@
 {
-  "author": "George Heeres <gheeres@gmail.com>",
-  "name": "activedirectory",
+  "name": "@mergermarket/activedirectory",
   "version": "0.7.2",
   "description": "ActiveDirectory is an ldapjs client for authN (authentication) and authZ (authorization) for Microsoft Active Directory with range retrieval support for large Active Directory installations.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "directories": {
     "lib": "./lib"
   },
   "engines": {
     "node": ">=0.8"
   },
+  "scripts": {
+    "build": "parcel build index.js"
+  },
   "keywords": [
     "ldap",
     "active directory"
   ],
-  "bugs": {
-    "url": "https://github.com/gheeres/node-activedirectory/issues"
-  },
   "dependencies": {
     "async": ">= 0.1.22",
     "bunyan": ">= 1.3.5",
@@ -25,10 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gheeres/node-activedirectory.git"
+    "url": "https://github.com/mergermarket/node-activedirectory.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "scope": "@mergermarket"
   },
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "parcel": "^2.0.0-beta.1"
   }
 }

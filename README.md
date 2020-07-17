@@ -1,3 +1,14 @@
+##### FORKED FROM node-activedirectory #####
+
+WARNING!!! We forked this library as a necessity so that we can fix a version of ldapjs package. 
+
+We publish this package manually so there are no pipelines for it. This is a temporary (hoping) solution.
+
+If you have to republish this package: 
+1- Change the version number in package.json
+2- Run `npm run build`
+3- Run `npm publish` 
+
 ActiveDirectory for Node
 =========
 
